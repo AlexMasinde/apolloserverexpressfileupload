@@ -15,7 +15,7 @@
   },
   "name": "fileupload",
   "version": "1.0.0",
-  "main": "resolvers.js",
+  "main": "index.js",
   "devDependencies": {},
   "keywords": [],
   "author": "",

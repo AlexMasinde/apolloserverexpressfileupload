@@ -1,18 +1,14 @@
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const { graphqlUploadExpress } = require("graphql-upload");
-const schema = require("./schema");
+require("dotenv/config");
+
+const schema = require("./graphql/schema");
 
 async function startApolloServer() {
   const server = new ApolloServer({
     schema,
     uploads: false,
-    context: ({ req, res }) => {
-      return {
-        req,
-        res,
-      };
-    },
   });
   await server.start();
 
