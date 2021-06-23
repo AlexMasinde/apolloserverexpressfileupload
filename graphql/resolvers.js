@@ -15,7 +15,6 @@ module.exports = {
         };
       });
       const result = await Promise.all(promises);
-      console.log(result);
       return result;
     },
   },
