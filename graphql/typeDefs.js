@@ -12,6 +12,6 @@ module.exports = gql`
     uploads: [File]
   }
   type Mutation {
-    uploadFile(file: Upload!): File
+    uploadFile(files: [Upload!]): [File]
   }
 `;
